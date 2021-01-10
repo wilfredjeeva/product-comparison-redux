@@ -23,7 +23,7 @@ steps:
   inputs:
     SourceFolder: 'build'
     Contents: '**/*'
-    TargetFolder: 'Web'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/Web'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)/Web'
