@@ -17,7 +17,7 @@ class App extends Component {
             <Fragment>
                 {loading && <h1 className="loading">Loading..!</h1>}
                 {error && (
-                    <h1 className="error">Error occurred. Refresh again!</h1>
+                    <h1 className="error">Error occurred. Refresh again! Or Try again later!</h1>
                 )}
                 {!loading && !error && <ProductComparisonContainer />}
             </Fragment>
